@@ -1,0 +1,7 @@
+-ID:/Repositories/CMake_Client_src/Client
+-ID:/Repositories/CMake_Client_build/Client
+-DWIN32
+--compiler-flavor=msvc
+-o
+D:/Repositories/CMake_Client_build/Client/moc_mainwindow.cpp
+D:/Repositories/CMake_Client_src/Client/mainwindow.h

@@ -1,0 +1,4 @@
+D:/Repositories/CMake_Client_build/CMakeFiles/ALL_BUILD.dir
+D:/Repositories/CMake_Client_build/CMakeFiles/ZERO_CHECK.dir
+D:/Repositories/CMake_Client_build/Client/CMakeFiles/UDP_Client.dir
+D:/Repositories/CMake_Client_build/Client/CMakeFiles/ALL_BUILD.dir

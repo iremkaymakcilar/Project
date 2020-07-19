@@ -1,0 +1,7 @@
+-ID:/Repositories/CMake_Server_src/Server
+-ID:/Repositories/CMake_Server_build/Server
+-DWIN32
+--compiler-flavor=msvc
+-o
+D:/Repositories/CMake_Server_build/Server/moc_mainwindow.cpp
+D:/Repositories/CMake_Server_src/Server/mainwindow.h
