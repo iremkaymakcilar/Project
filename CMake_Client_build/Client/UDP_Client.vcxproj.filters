@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Repositories\CMake_Client_src\Client\UDP_Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Repositories\CMake_Client_src\Client\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Repositories\CMake_Client_build\Client\moc_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Repositories\CMake_Client_src\Client\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Repositories\CMake_Client_build\Client\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Repositories\CMake_Client_build\CMakeFiles\6ab68c793afc25413760c9657882225d\moc_mainwindow.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Repositories\CMake_Client_src\Client\mainwindow.ui" />
+    <CustomBuild Include="D:\Repositories\CMake_Client_src\Client\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1DAE35B6-0CC1-3134-805D-C591BE4208E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0C2DEBAD-7D58-33F4-98D8-B7FA8FE8F9A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1A91D60B-261D-3CCD-9DD1-EF4F2D3D96DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

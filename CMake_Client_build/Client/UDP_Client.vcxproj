@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04411C0C-19DF-31B1-82B2-D4590DF8E6AA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>UDP_Client</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Repositories\CMake_Client_build\Client\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UDP_Client.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UDP_Client</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Repositories\CMake_Client_build\Client\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UDP_Client.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UDP_Client</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Repositories\CMake_Client_build\Client\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">UDP_Client.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">UDP_Client</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Repositories\CMake_Client_build\Client\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">UDP_Client.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">UDP_Client</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Qt\5.15.0\msvc2019_64\lib\Qt5Widgetsd.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Guid.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Repositories/CMake_Client_build/Client/Debug/UDP_Client.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Repositories/CMake_Client_build/Client/Debug/UDP_Client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Qt\5.15.0\msvc2019_64\lib\Qt5Widgets.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Gui.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Repositories/CMake_Client_build/Client/Release/UDP_Client.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Repositories/CMake_Client_build/Client/Release/UDP_Client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Qt\5.15.0\msvc2019_64\lib\Qt5Widgets.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Gui.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Repositories/CMake_Client_build/Client/MinSizeRel/UDP_Client.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Repositories/CMake_Client_build/Client/MinSizeRel/UDP_Client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Repositories\CMake_Client_build\Client;D:\Repositories\CMake_Client_src\Client;D:\Qt\5.15.0\msvc2019_64\include;D:\Qt\5.15.0\msvc2019_64\include\QtWidgets;D:\Qt\5.15.0\msvc2019_64\include\QtGui;D:\Qt\5.15.0\msvc2019_64\include\QtANGLE;D:\Qt\5.15.0\msvc2019_64\include\QtCore;D:\Qt\5.15.0\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Qt\5.15.0\msvc2019_64\lib\Qt5Widgets.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Gui.lib;D:\Qt\5.15.0\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Repositories/CMake_Client_build/Client/RelWithDebInfo/UDP_Client.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Repositories/CMake_Client_build/Client/RelWithDebInfo/UDP_Client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Repositories\CMake_Client_build\CMakeFiles\6ab68c793afc25413760c9657882225d\moc_mainwindow.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Repositories\CMake_Client_build\Client
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\5.15.0\msvc2019_64\bin\moc.exe @D:/Repositories/CMake_Client_build/Client/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Repositories\CMake_Client_src\Client\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Repositories\CMake_Client_build\Client\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Repositories\CMake_Client_build\Client
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\5.15.0\msvc2019_64\bin\moc.exe @D:/Repositories/CMake_Client_build/Client/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Repositories\CMake_Client_src\Client\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Repositories\CMake_Client_build\Client\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Repositories\CMake_Client_build\Client
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\5.15.0\msvc2019_64\bin\moc.exe @D:/Repositories/CMake_Client_build/Client/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Repositories\CMake_Client_src\Client\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Repositories\CMake_Client_build\Client\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Repositories\CMake_Client_build\Client
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\5.15.0\msvc2019_64\bin\moc.exe @D:/Repositories/CMake_Client_build/Client/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Repositories\CMake_Client_src\Client\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Repositories\CMake_Client_build\Client\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Repositories\CMake_Client_src\Client\mainwindow.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\5.15.0\msvc2019_64\bin\uic.exe -o D:/Repositories/CMake_Client_build/Client/ui_mainwindow.h D:/Repositories/CMake_Client_src/Client/mainwindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Repositories\CMake_Client_build\Client\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\5.15.0\msvc2019_64\bin\uic.exe -o D:/Repositories/CMake_Client_build/Client/ui_mainwindow.h D:/Repositories/CMake_Client_src/Client/mainwindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Repositories\CMake_Client_build\Client\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\5.15.0\msvc2019_64\bin\uic.exe -o D:/Repositories/CMake_Client_build/Client/ui_mainwindow.h D:/Repositories/CMake_Client_src/Client/mainwindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Repositories\CMake_Client_build\Client\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_mainwindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\5.15.0\msvc2019_64\bin\uic.exe -o D:/Repositories/CMake_Client_build/Client/ui_mainwindow.h D:/Repositories/CMake_Client_src/Client/mainwindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Repositories\CMake_Client_build\Client\ui_mainwindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Repositories\CMake_Client_src\Client\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Repositories/CMake_Client_src/Client/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Repositories/CMake_Client_src -BD:/Repositories/CMake_Client_build --check-stamp-file D:/Repositories/CMake_Client_build/Client/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Repositories\CMake_Client_build\Client\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Repositories/CMake_Client_src/Client/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Repositories/CMake_Client_src -BD:/Repositories/CMake_Client_build --check-stamp-file D:/Repositories/CMake_Client_build/Client/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Repositories\CMake_Client_build\Client\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Repositories/CMake_Client_src/Client/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Repositories/CMake_Client_src -BD:/Repositories/CMake_Client_build --check-stamp-file D:/Repositories/CMake_Client_build/Client/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Repositories\CMake_Client_build\Client\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Repositories/CMake_Client_src/Client/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Repositories/CMake_Client_src -BD:/Repositories/CMake_Client_build --check-stamp-file D:/Repositories/CMake_Client_build/Client/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Qt\5.15.0\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Repositories\CMake_Client_build\Client\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Repositories\CMake_Client_src\Client\mainwindow.h" />
+    <ClCompile Include="D:\Repositories\CMake_Client_src\Client\UDP_Client.cpp" />
+    <ClCompile Include="D:\Repositories\CMake_Client_src\Client\mainwindow.cpp" />
+    <ClCompile Include="D:\Repositories\CMake_Client_build\Client\moc_mainwindow.cpp" />
+    <ClInclude Include="D:\Repositories\CMake_Client_build\Client\ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Repositories\CMake_Client_build\ZERO_CHECK.vcxproj">
+      <Project>{A5D8FCE1-FDAF-3B7F-96C2-AF2574B6DD0E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
